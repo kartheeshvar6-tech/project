@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Tic Tac Toe Pro</h1>
+
+    <div class="controls">
+
+        <select id="mode">
+            <option value="pvp">Player vs Player</option>
+            <option value="ai">Player vs Computer</option>
+        </select>
+
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+
+        <select id="boardSize">
+            <option value="3">3 × 3</option>
+            <option value="4">4 × 4</option>
+        </select>
+
+    </div>
+
+    <div class="scoreboard">
+        <div>X Wins: <span id="xScore">0</span></div>
+        <div>O Wins: <span id="oScore">0</span></div>
+        <div>Draws: <span id="drawScore">0</span></div>
+    </div>
+
+    <div class="timer">
+        Time: <span id="timer">0</span>s
+    </div>
+
+    <div id="status">Player X Turn</div>
+
+    <div id="board" class="board"></div>
+
+    <div class="buttons">
+        <button id="restartBtn">Restart</button>
+        <button id="newGameBtn">New Game</button>
+    </div>
+
+    <div class="history">
+        <h3>Move History</h3>
+        <ul id="historyList"></ul>
+    </div>
+
+</div>
+
+<audio id="winSound">
+    <source src="https://assets.mixkit.co/active_storage/sfx/2018/2018-preview.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="loseSound">
+    <source src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+                                                 </html>
